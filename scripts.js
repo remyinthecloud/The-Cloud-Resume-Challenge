@@ -1,6 +1,9 @@
-const counter = document.querySelector(".counter-number")
-    let response = await fetch("https://nxvtfqdljcrvm4tn4tv4snjppa0yylyn.lambda-url.us-east-1.on.aws/")
-    let data = await response.json()
-    counter.innerHTML = ` Views: ${data}`;
+const counter = document.querySelector(".visitorCounter") 
+async function updateCounter(){
 
-updateCounter()
+    let response = await fetch("https://o9h7o4om9j.execute-api.us-east-1.amazonaws.com/visitorCounter");
+    let data = await response.json();
+    counter.innerHTML = ` Views: ${data}`;
+}
+
+updateCounter();
