@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <script>
+        fetch('https://o9h7o4om9j.execute-api.us-east-1.amazonaws.com/visitorCounter')
+            .then(response => response.json())
+            .then((data) => {
+                document.getElementById('replaceme').innerText = data.count
+            })
+    </script>
 
     <style>
         body {
@@ -40,12 +47,14 @@
     </style>
 </head>
 <body>
-
 <div class="container">
     <header>
         <h1>Remy Paul</h1>
         <p>Cloud Engineer</p>
-        <div class="visitorCounter text-black font-os">Couldn't read views</div>
+        <p>
+            Visitors:
+            <span id="replaceme" />
+        </p>
     </header>
 
     <div class="section">
@@ -99,8 +108,6 @@
         </div>
     </div>
 </div>
-
-<script src="scripts.js"></script>
 
 </body>
 </html>
