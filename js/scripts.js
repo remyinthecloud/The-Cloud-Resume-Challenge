@@ -4,4 +4,4 @@ async function updateCounter() {
     let data = await response.json();
     counter.innerHTML = ` This page has ${data} Views!`;
 }
-updateCounter();
+window.onload = updateCounter();
