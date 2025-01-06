@@ -1,13 +1,13 @@
 {
   "name": "my-website",
   "version": "0.1.0",
+  "homepage": "https://remyinthecloud.com",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^7.1.1",
-    "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
     "three": "^0.172.0",
     "web-vitals": "^4.2.4"
@@ -39,6 +39,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
+    "react-scripts": "^5.0.1",
     "tailwindcss": "^3.4.17"
   }
 }
